@@ -8,6 +8,7 @@ It powers a companion frontend wiki and a builder tool for planning your Sims ga
 ## 🌐 Live Demo
 
 **API URL**: [https://sims4-api.onrender.com](https://sims4-api.onrender.com)
+
 **Docs**: [https://sims4-api.onrender.com/docs](https://sims4-api.onrender.com/docs)
 
 ✅ `/api/traits` endpoint is now live!
