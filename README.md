@@ -1,55 +1,53 @@
-# Sims 4 API 🎭 - Sims 4 Game Data Explorer
+# 🎮 Sims 4 Companion API
 
-An experimental API for exploring **Sims 4 traits, careers, and more**—built to support a future planner app that helps users design Sims with purpose, not chaos.  
-
-Hosted on [Render](https://render.com/), backed by PostgreSQL on [Neon](https://neon.tech/), and built with love.
-
----
-
-## ✨ What It Does
-
-This API serves as a foundation for an upcoming planner app. Currently, it allows basic retrieval of Sims 4 data, with a focus on traits. Future updates will support filtering, categorization, and more advanced planning logic.
-
-### 🛠️ Current capabilities
-
-- Retrieve all available traits (`/traits`)
-- Returns structured JSON with name, description, ages, species, occults and game packs
-
-### 🧪 In the works
-
-- Trait types (e.g. CAS, Aspiration Reward, etc)
-- Search and filtering
-- More data: Careers, Aspirations, Worlds, Lots, etc
+A FastAPI backend for collecting and organizing *The Sims 4* game data: traits, aspirations, game packs, recipes, Sims, and more.  
+It powers a companion frontend wiki and a builder tool for planning your Sims gameplay. No authentication required — open and free.
 
 ---
 
-## 🔌 API Access
+## 🌐 Live Demo (Coming Soon)
 
-**Base URL:**  
-`https://sims-api.onrender.com/api`
+**API URL**: https://sims4-api.onrender.com  
+**Docs**: https://sims4-api.onrender.com/docs
 
-### Example: Get all traits
+---
 
-```http
-GET /api/traits
-```
+## 🧱 Tech Stack
 
-## 🧪 Example Output
+- **Backend**: FastAPI (Python)
+- **Database**: PostgreSQL (hosted on Neon)
+- **ORM**: SQLAlchemy (or raw SQL for simplicity)
+- **Deployment**: Render
 
-```json
-{
-  "name": "Wild",
-  "description": "Spirited and full of Energy. These Toddlers love to explore...",
-  "ages": "Toddler",
-  "species": "Human",
-  "occults": "Alien, Merfolk, Spellcaster, Vampire, Werewolf",
-  "packs": "Base Game"
-}
+---
+
+## 🧪 Features (Planned)
+
+| Resource       | Endpoint                  | Description                          |
+|----------------|---------------------------|--------------------------------------|
+| Traits         | `/api/traits`             | Lists all traits                     |
+| Aspirations    | `/api/aspirations`        | Browse all aspirations               |
+| Recipes        | `/api/recipes`            | Food and crafting recipes            |
+| Game Packs     | `/api/gamepacks`          | Expansion & game packs info          |
+| Plants         | `/api/plants`             | Harvestables and collectibles        |
+| Sims (custom)  | `/api/sims`               | Curated or user-created Sims         |
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone and Navigate
+
+```bash
+git clone https://github.com/your-username/sims4-api.git
+cd sims4-api
+
 ```
 ---
 
-## ⚙️ Tech Stack
-- FastAPI (Python)
-- PostgreSQL (hosted on Neon)
-- Render for deployment
-- SQLAlchemy ORM + raw SQL for aggregations
+## 👤 Author
+
+Made with love by **Art Mendes**  
+GitHub: [@artmendesbr](https://github.com/artmendesbr)
+
+> This project is fan-made and not affiliated with EA, Maxis, or The Sims franchise.
